@@ -1,0 +1,37 @@
+{
+  "ocr_settings": {
+    "use_ocr": true,
+    "ocr_pipeline": "fast",
+    "language": "auto"
+  },
+  "conversion_settings": {
+    "export_formats": ["markdown", "json"],
+    "include_images": true,
+    "preserve_layout": true,
+    "extract_tables": true
+  },
+  "output_settings": {
+    "output_dir": "output",
+    "create_subdirs": true,
+    "overwrite_existing": false
+  },
+  "supported_formats": [
+    ".pdf",
+    ".docx", 
+    ".pptx",
+    ".xlsx",
+    ".html",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".tiff"
+  ],
+  "vlm_settings": {
+    "use_vlm": false,
+    "vlm_model": "smoldocling"
+  },
+  "device_settings": {
+    "use_cpu": true,
+    "device": "cpu"
+  }
+}

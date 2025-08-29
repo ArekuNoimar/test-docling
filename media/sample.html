@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプル文書</title>
+</head>
+<body>
+    <h1>OCRテスト文書</h1>
+    
+    <h2>概要</h2>
+    <p>この文書は、Doclingライブラリを使用したOCRテストのためのサンプル文書です。</p>
+    
+    <h2>機能</h2>
+    <ul>
+        <li>PDF文書の解析</li>
+        <li>Word文書の処理</li>
+        <li>PowerPoint文書の変換</li>
+        <li>HTML文書の読み込み</li>
+        <li>画像ファイルからのテキスト抽出</li>
+    </ul>
+    
+    <h2>対応形式</h2>
+    <table border="1">
+        <tr>
+            <th>形式</th>
+            <th>拡張子</th>
+            <th>OCR対応</th>
+        </tr>
+        <tr>
+            <td>PDF</td>
+            <td>.pdf</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>Word</td>
+            <td>.docx</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>PowerPoint</td>
+            <td>.pptx</td>
+            <td>✓</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>.html</td>
+            <td>✓</td>
+        </tr>
+    </table>
+    
+    <h2>使用方法</h2>
+    <p>コマンドライン例:</p>
+    <pre><code>
+uv run src/main.py --config src/config.json --doc-file media/sample.html
+uv run src/main.py --config src/config.json --doc-dir media --output-format markdown
+    </code></pre>
+    
+    <p>このサンプル文書により、HTMLからのテキスト抽出機能をテストできます。</p>
+</body>
+</html>
